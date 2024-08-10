@@ -1,0 +1,104 @@
+/* General Styles */
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  margin: 0;
+  background: black;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensures the background image covers the viewport */
+  background-position: center;
+  min-height: 100vh;
+  
+  font-family: "Poppins", sans-serif;
+  color: #fff; /* Sets default text color to white for visibility */
+}
+
+/* Header Styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 50px;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better text visibility */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 32px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+.gymbar{
+  margin-right: 100px;
+}
+.gymbar a {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 20px;
+
+  position: relative;
+}
+
+.gymbar a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width .3s;
+}
+
+.gymbar a:hover::before {
+  width: 100%;
+}
+
+/* Main Content Styles */
+.main-content {
+  padding-top: 100px; /* Offset content from fixed header */
+  text-align: center;
+}
+
+.main-content img {
+  max-width: 80%; /* Ensures the image is not too wide */
+  height: auto;
+  border-radius: 10px; /* Optional: Adds some styling to the image */
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+footer p {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Adds a background to make the link more prominent */
+  border-radius: 5px; /* Optional: Rounds the corners of the link background */
+}
+
+footer a:hover {
+  background-color: rgba(255, 255, 255, 0.7); /* Change background color on hover */
+  color: black; /* Change text color on hover */
+}
+img{
+  width: 100%;
+}
