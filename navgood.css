@@ -9,6 +9,7 @@ body {
   background-size: cover; /* Ensures the background image covers the viewport */
   background-position: center;
   min-height: 100vh;
+  background-attachment: fixed;
   
   font-family: "Poppins", sans-serif;
   color: #fff; /* Sets default text color to white for visibility */
