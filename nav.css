@@ -5,6 +5,7 @@ body {
     background-size: cover; /* Optional: Makes the background image cover the entire viewport */
     background-position: center; /* Optional: Centers the background image */
   min-height: 100vh;
+  background-attachment: fixed;
 }
 
 .navbar {
